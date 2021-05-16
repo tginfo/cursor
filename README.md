@@ -14,3 +14,5 @@ Download the package from [Releases](https://github.com/tginfo/cursor/releases/l
 `Resources` folder contains vector files.
 
 `Windows` folder contains files for the Windows package.
+
+`macOS` folder contains files for the macOS package.
