@@ -1,0 +1,60 @@
+ Telegram
+; Нажмите правой клавишей мыши по "Install.inf" и выберите "Установить" в меню.
+; Затем перейдите в настройки мыши в панели управления и выберите тему "Telegram"
+
+; Right click on the file "Install.inf" and select "Install".
+; Then in the Mouse control panel apply "Telegram".
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%,%10%\%CUR_DIR%\%person%,%10%\%CUR_DIR%\%pin%"
+
+[Scheme.Cur]
+Normal Select.cur
+Text Select.cur
+Busy.ani
+Horizontal Resize.cur
+Help Select.cur
+Link Select.cur
+Move.cur
+Diagonal Resize 2.cur
+Vertical Resize.cur
+Diagonal Resize 1.cur
+Handwriting.cur
+Precision Select.cur
+Unavailable.cur
+Alternate Select.cur
+Working in Background.ani
+Person Select.cur
+Location Select.cur
+
+[Strings]
+CUR_DIR       = "Cursors\Telegram"
+SCHEME_NAME   = "Telegram"
+pointer       = "Normal Select.cur"
+help          = "Help Select.cur"
+work          = "Working in Background.ani"
+busy          = "Busy.ani"
+text          = "Text Select.cur"
+unavailiable  = "Unavailable.cur"
+vert          = "Vertical Resize.cur"
+horz          = "Horizontal Resize.cur"
+dgn1          = "Diagonal Resize 1.cur"
+dgn2          = "Diagonal Resize 2.cur"
+move          = "Move.cur"
+link          = "Link Select.cur"
+cross         = "Precision Select.cur"
+hand          = "Handwriting.cur"
+alternate     = "Alternate Select.cur"
+person        = "Person Select.cur"
+pin           = "Location Select.cur"
